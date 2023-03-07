@@ -1,0 +1,100 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>FileSelector</Name>
+        <Access>Public</Access>
+        <Location left="162" top="59" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Entity</Name>
+        <Access>Public</Access>
+        <Location left="425" top="59" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ParseDXF</Name>
+        <Access>Public</Access>
+        <Location left="708" top="59" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PressState</Name>
+        <Access>Public</Access>
+        <Location left="708" top="334" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>buttonManager</Name>
+        <Access>Public</Access>
+        <Location left="425" top="334" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>directortManager</Name>
+        <Access>Public</Access>
+        <Location left="162" top="334" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>UIButton</Name>
+        <Access>Public</Access>
+        <Location left="983" top="334" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>UIButtons</Name>
+        <Access>Public</Access>
+        <Location left="983" top="59" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>button</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="59" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Method">public void NewMethod()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
