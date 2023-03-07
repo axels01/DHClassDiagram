@@ -1,0 +1,12 @@
+private bool done;
+public GameObject fileSelector;
+public PressableButton bytafilen;
+public GameObject truss;
+public GameObject timber;
+public GameObject lower;
+public GameObject upper;
+public GameObject locked;
+public GameObject unlocked;
+public GameObject highlight;
+private LineRenderer lineRenderer;
+public Material[] materials;

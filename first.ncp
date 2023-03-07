@@ -8,40 +8,80 @@
         <Name>FileSelector</Name>
         <Access>Public</Access>
         <Location left="162" top="59" />
-        <Size width="162" height="216" />
+        <Size width="162" height="587" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
-        <Name>Entity</Name>
-        <Access>Public</Access>
-        <Location left="425" top="59" />
-        <Size width="162" height="216" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">public GameObject prefab</Member>
+        <Member type="Field">public GameObject mainUI</Member>
+        <Member type="Field">public GameObject parent</Member>
+        <Member type="Field">public GameObject backButton</Member>
+        <Member type="Field">public GameObject keyboard</Member>
+        <Member type="Field">public MixedRealityKeyboard keyboardComponent</Member>
+        <Member type="Field">public GameObject toggleKeyboard</Member>
+        <Member type="Field">public GameObject searchField</Member>
+        <Member type="Field">public TMP_InputField searchfieldcomponent</Member>
+        <Member type="Field">public GameObject searchButton</Member>
+        <Member type="Field">public GridObjectCollection collection</Member>
+        <Member type="Field">public GameObject noButton</Member>
+        <Member type="Field">public GameObject yesButton</Member>
+        <Member type="Field">public GameObject useFilePrompt</Member>
+        <Member type="Field">public GameObject useFileScreen</Member>
+        <Member type="Field">public GameObject notDXFPrompt</Member>
+        <Member type="Field">public GameObject continueButton</Member>
+        <Member type="Field">public GameObject notDXFScreen</Member>
+        <Member type="Field">directortManager startDirectory</Member>
+        <Member type="Field">directortManager currentDirectory</Member>
+        <Member type="Field">Stack pathHistory</Member>
+        <Member type="Field">private string startPath</Member>
+        <Member type="Field">public string selectedFile</Member>
+        <Member type="Field">public bool done</Member>
+        <Member type="Field">UIButtons uiButtons</Member>
+        <Member type="Field">string screen</Member>
+        <Member type="Field">public bool keyboardCommit</Member>
+        <Member type="Method">void Start()</Member>
+        <Member type="Method">void updatePrompt()</Member>
+        <Member type="Method">void Update()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>ParseDXF</Name>
         <Access>Public</Access>
         <Location left="708" top="59" />
-        <Size width="162" height="216" />
+        <Size width="162" height="468" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">private bool done</Member>
+        <Member type="Field">public GameObject fileSelector</Member>
+        <Member type="Field">public PressableButton bytafilen</Member>
+        <Member type="Field">public GameObject truss</Member>
+        <Member type="Field">public GameObject timber</Member>
+        <Member type="Field">public GameObject lower</Member>
+        <Member type="Field">public GameObject upper</Member>
+        <Member type="Field">public GameObject locked</Member>
+        <Member type="Field">public GameObject unlocked</Member>
+        <Member type="Field">public GameObject highlight</Member>
+        <Member type="Field">private LineRenderer lineRenderer</Member>
+        <Member type="Field">public Material[] materials</Member>
+        <Member type="Method">public void Clear()</Member>
+        <Member type="Method">void TaskOnClick(string path)</Member>
+        <Member type="Method">private void Update()</Member>
+        <Member type="Method">public void Start()</Member>
+        <Member type="Method">public static string GetApi(string ApiUrl)</Member>
+        <Member type="Method">public void manageList(List&lt;List&lt;string&gt;&gt; list)</Member>
+        <Member type="Method">void PBMesh(Entity[] entity)</Member>
+        <Member type="Method">void Draw(List&lt;Vector2&gt; lst, string name)</Member>
+        <Member type="Method">void DrawTriangel(Vector3[] positions, float startWidth, float endWidth, string name)</Member>
+        <Member type="Method">public void log(Entity[] entity)</Member>
+        <Member type="Method">public void writeData(Entity[] entity)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>PressState</Name>
         <Access>Public</Access>
-        <Location left="708" top="334" />
+        <Location left="708" top="583" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">public bool isPressed = false</Member>
+        <Member type="Method">public void SetPressed()</Member>
+        <Member type="Method">public void reset()</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -50,18 +90,32 @@
         <Location left="425" top="334" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">public GameObject button</Member>
+        <Member type="Field">public bool isPressed</Member>
+        <Member type="Method">public bool pressed(PressState pressState)</Member>
+        <Member type="Method">public void destroy()</Member>
+        <Member type="Method">private void attachListener(PressState pressState)</Member>
+        <Member type="Method">public PressState buttonManagerBuilder(GameObject gameObject, GameObject parent = null, string name = null, string type = null)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
         <Name>directortManager</Name>
         <Access>Public</Access>
-        <Location left="162" top="334" />
-        <Size width="162" height="216" />
+        <Location left="425" top="583" />
+        <Size width="162" height="298" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">private GameObject prefab</Member>
+        <Member type="Field">private GameObject parent</Member>
+        <Member type="Field">private GridObjectCollection collection</Member>
+        <Member type="Field">public string directoryPath</Member>
+        <Member type="Field">private List&lt;button&gt; thisDirectory = new List&lt;button&gt;()</Member>
+        <Member type="Method">public Dictionary&lt;string, string&gt; buttonStatus()</Member>
+        <Member type="Method">public void updateCollection()</Member>
+        <Member type="Method">public void setActive(bool activity)</Member>
+        <Member type="Method">public void search(string searchTerm)</Member>
+        <Member type="Method">public void destroy()</Member>
+        <Member type="Method">private List&lt;button&gt; getFilesAndDirectories(string directoryPath)</Member>
+        <Member type="Constructor">public directortManager(string Path, GameObject Parent, GameObject Prefab)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -70,8 +124,9 @@
         <Location left="983" top="334" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">public string action</Member>
+        <Member type="Field">public buttonManager buttonManager</Member>
+        <Member type="Field">public PressState pressState</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -80,8 +135,9 @@
         <Location left="983" top="59" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">public Dictionary&lt;GameObject, UIButton&gt; uIButtons = new Dictionary&lt;GameObject, UIButton&gt;()</Member>
+        <Member type="Method">public string update()</Member>
+        <Member type="Method">public void add(GameObject gameObject, string action)</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
@@ -90,8 +146,27 @@
         <Location left="1235" top="59" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
-        <Member type="Field">int newField</Member>
-        <Member type="Method">public void NewMethod()</Member>
+        <Member type="Field">public string Name</Member>
+        <Member type="Field">public string Type</Member>
+        <Member type="Field">public string Path</Member>
+        <Member type="Field">public buttonManager Button</Member>
+        <Member type="Field">public PressState PressState</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Entity</Name>
+        <Access>Public</Access>
+        <Location left="425" top="59" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private string _tag</Member>
+        <Member type="Field">public string Tag</Member>
+        <Member type="Field">private int _vertexCount</Member>
+        <Member type="Field">public Int32 VertexCount</Member>
+        <Member type="Field">private List&lt;Vector3&gt; _points</Member>
+        <Member type="Field">public List&lt;Vector3&gt; Points</Member>
+        <Member type="Field">private Material _material</Member>
+        <Member type="Field">public Material Material</Member>
         <Modifier>None</Modifier>
       </Entity>
     </Entities>
